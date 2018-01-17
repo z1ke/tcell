@@ -50,6 +50,8 @@ type Terminfo struct {
 	Colors       int      `json:"colors,omitempty"` // colors
 	Bell         string   `json:"bell,omitempty"`   // bell
 	Clear        string   `json:"clear,omitempty"`  // clear
+	EnterBP      string   `json:"spaste,omitempty"` // spaste
+	ExitBP       string   `json:"rpaste,omitempty"` // rpaste
 	EnterCA      string   `json:"smcup,omitempty"`  // smcup
 	ExitCA       string   `json:"rmcup,omitempty"`  // rmcup
 	ShowCursor   string   `json:"cnorm,omitempty"`  // cnorm

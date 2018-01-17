@@ -155,6 +155,7 @@ func (t *tScreen) Init() error {
 		}
 	}
 
+	t.TPuts(ti.EnterBP)
 	t.TPuts(ti.EnterCA)
 	t.TPuts(ti.HideCursor)
 	t.TPuts(ti.EnableAcs)
@@ -393,6 +394,7 @@ func (t *tScreen) Fini() {
 	t.TPuts(ti.AttrOff)
 	t.TPuts(ti.Clear)
 	t.TPuts(ti.ExitCA)
+	t.TPuts(ti.ExitBP)
 	t.TPuts(ti.ExitKeypad)
 	t.TPuts(ti.TParm(ti.MouseMode, 0))
 	t.curstyle = Style(-1)

@@ -11,6 +11,8 @@ func init() {
 		Colors:          256,
 		Bell:            "\a",
 		Clear:           "\x1b[H\x1b[2J",
+		EnterBP:         "\x1b[?2004h",
+		ExitBP:          "\x1b[?2004l",
 		EnterCA:         "\x1b[?1049h",
 		ExitCA:          "\x1b[?1049l",
 		ShowCursor:      "\x1b[?12l\x1b[?25h",
